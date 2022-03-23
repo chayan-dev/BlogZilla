@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hp/AndroidStudioProjects/BlogZilla/app/src/main/res/drawable/side_nav_bar.xml" value="0.125" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/BlogZilla/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/BlogZilla/app/src/main/res/layout/content_main.xml" value="0.25" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/BlogZilla/app/src/main/res/layout/fragment_gallery.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/hp/AndroidStudioProjects/BlogZilla/app/src/main/res/layout/nav_header_main.xml" value="0.1762917933130699" />
       </map>
     </option>
   </component>

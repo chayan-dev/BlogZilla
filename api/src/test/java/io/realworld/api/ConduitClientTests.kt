@@ -1,6 +1,7 @@
 package io.realworld.api
 
 import junit.framework.Assert.assertNotNull
+import kotlinx.coroutines.runBlocking
 import org.junit.Test
 
 class ConduitClientTests {
@@ -9,8 +10,29 @@ class ConduitClientTests {
 
     @Test
     fun `GET articles`(){
-        val articles= conduitClient.api.getArticles().execute()
-        assertNotNull(articles.body()?.articles)
+        runBlocking{
+            val articles= conduitClient.api.getArticles()
+            assertNotNull(articles.body()?.articles)
+        }
+
+    }
+
+    @Test
+    fun `GET articles by author`(){
+        runBlocking{
+            val articles= conduitClient.api.getArticles(author="Gerome")
+            assertNotNull(articles.body()?.articles)
+        }
+
+    }
+
+    @Test
+    fun `GET articles by tags`(){
+
+        runBlocking{
+            val articles= conduitClient.api.getArticles(tags= listOf("introduction"))
+            assertNotNull(articles.body()?.articles)
+        }
 
     }
 
